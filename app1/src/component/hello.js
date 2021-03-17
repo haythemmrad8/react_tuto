@@ -8,13 +8,23 @@ class Hello extends Component{
             gender:'male',
             name:'haythem'
         },
-        classe : '2dni'
+        classe : 21
 
      }
+     levelDown = () => {
+         this.setState({classe: this.state.classe - 1 });
+         }
+         dobleIT (){
+            this.setState({classe: this.state.classe * 2 });
+            }
     render(){
         return(
             <div>hello from {this.props.name} 
-                <p>{'age : '+ this.state.user.age +'gender :'+this.state.user.gender+'name : '+this.state.user.name}</p> 
+                <p>{'classe : '+ this.state.classe }</p> 
+                <button onClick={()=>{this.setState({classe: this.state.classe + 1})}}>level UP </button>
+                <button onClick={this.levelDown}>level down</button>
+                <button onClick={this.dobleIT.bind(this)}>Double It</button>
+
             </div>
         );
     }
