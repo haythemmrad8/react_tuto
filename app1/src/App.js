@@ -3,6 +3,7 @@
 import React, {Component } from 'react';
 import Welcome from "./component/welcome";
 import Hello from "./component/hello"
+import Lists from "./component/lists"
 
 class App extends Component {
 render(){
@@ -13,6 +14,9 @@ render(){
       if his happend !!
     </Welcome>
     <Hello name="haythem"/>
+
+    <Lists></Lists>
+    
     </div>
   );
 }
