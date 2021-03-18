@@ -4,6 +4,7 @@ import React, {Component } from 'react';
 import Welcome from "./component/welcome";
 import Hello from "./component/hello"
 import Lists from "./component/lists"
+import MyFistIf from "./component/conditions"
 
 class App extends Component {
 render(){
@@ -15,7 +16,8 @@ render(){
     </Welcome>
     <Hello name="haythem"/>
 
-    <Lists></Lists>
+    <Lists/>
+    <MyFistIf/>
     
     </div>
   );
