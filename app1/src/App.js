@@ -5,6 +5,8 @@ import Welcome from "./component/welcome";
 import Hello from "./component/hello"
 import Lists from "./component/lists"
 import MyFistIf from "./component/conditions"
+import LifeCycleExp from "./component/lifeCycleExp"
+
 
 class App extends Component {
 render(){
@@ -18,7 +20,7 @@ render(){
 
     <Lists/>
     <MyFistIf/>
-    
+    <LifeCycleExp/>
     </div>
   );
 }
